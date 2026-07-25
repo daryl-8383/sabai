@@ -2,7 +2,8 @@
 
 Static one-pager for SABAI, a Thai ya dom herbal inhaler. Vite + vanilla HTML/CSS/JS.
 
-**Live:** https://daryl-8383.github.io/sabai/
+**Live (production):** https://sabai-site-nu.vercel.app/
+**Mirror (GitHub Pages):** https://daryl-8383.github.io/sabai/
 
 ## Before taking orders
 
@@ -28,9 +29,9 @@ rm -rf /tmp/sabai-pages/* && cp -R dist/* /tmp/sabai-pages/
 cd /tmp/sabai-pages && git add -A && git commit -m "deploy" && git push
 ```
 
-To move to Vercel (custom domain): `vercel login`, then `vercel --prod` from this
-directory — it's a default static Vite build, no config needed. If you do, update
-the `og:url` / `og:image` / canonical URLs in `index.html` to the new domain.
+Vercel is connected (project `sabai-site`): `vercel deploy --prod --yes` from this
+directory. For a custom domain, add it in the Vercel dashboard and update the
+`og:url` / `og:image` / canonical URLs in `index.html`.
 
 ## Legal guardrail
 
